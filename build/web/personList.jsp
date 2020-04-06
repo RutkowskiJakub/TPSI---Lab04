@@ -8,11 +8,18 @@
     </head>
     <body>
         <h1>Person List</h1>
+        <table border =\"1\" align = \"center\"> 
+            <tr> <th> Imie</th> <th> Nazwisko </th> <th> email </th> </tr>
+        
+            
+            
+            
                 <c:forEach items="${tabelaOsob}" var="osoba">
-                    <p>
-                    ${osoba.getFirstName()}  ${osoba.getLastName()}  &nbsp; &nbsp; &nbsp; ${osoba.getEmail()}
-                    </p>
+                <tr>
+                    <th> ${osoba.getFirstName()} </th> <th> ${osoba.getLastName()} </th> <th> ${osoba.getEmail()} </th>
+                </tr>
     
                 </c:forEach>
+        </table>
     </body>
 </html>
